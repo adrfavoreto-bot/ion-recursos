@@ -23,7 +23,7 @@
     if (!codcli) {
       document.getElementById('loading').innerText = 'Cliente não informado.';
     } else {
-      fetch(`https://sua-api.com.br/winthor/ano-vs-ano?codcli=${codcli}`)
+      fetch(`http://177.92.26.254:8000/clientefornecedor?codcli=${codcli}`)
         .then(res => res.json())
         .then(data => {
           document.getElementById('loading').style.display = 'none';
